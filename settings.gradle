@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+    plugins {
+        id 'com.android.application' version '7.1.0-alpha08'
+        id 'com.android.library' version '7.1.0-alpha08'
+        id 'org.jetbrains.kotlin.android' version '1.6.10'
+        id 'com.google.gms.google-services' version '3.4.8'
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven{url 'https://jitpack.io'}
+    }
+}
+
+rootProject.name = "shopintelli"
+include ':app'
+

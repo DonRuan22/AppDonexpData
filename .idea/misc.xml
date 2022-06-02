@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/baseline_whatsapp_24.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/ic_google.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/ic_launcher_donexp_background.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/drawable/ic_signin_background.xml" value="0.1185" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/font/sulsans.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_cadastro_client.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_category_orders.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_category_products.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_client_info.xml" value="0.24328593996840442" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_client_order.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_list_item_products_orders.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_principal.xml" value="0.24328593996840442" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_products_orders.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_register_calca.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_register_camiseta.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_register_order_camiseta.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_register_order_product.xml" value="0.25" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_register_product.xml" value="0.25" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_sign_in.xml" value="0.15" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/activity_update_client.xml" value="0.25" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/banner_item.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/categorie_product_item.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/category_item.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/chip_choice.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/fragment_client_order.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/fragment_order.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/fragment_product.xml" value="0.18" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/fragment_restaurant.xml" value="0.25" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/list_item_product_item.xml" value="0.1921875" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/more_client_order_item.xml" value="0.14479166666666668" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/more_order_item.xml" value="0.25" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/more_product_item.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/more_product_order_item.xml" value="0.33" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/more_shop_item.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/layout/shop_item.xml" value="0.22" />
+        <entry key="..\:/Users/Donruan/Documents/DHL_App/DHLApp/shopintelli/app/src/main/res/mipmap-anydpi-v26/ic_launcher2.xml" value="0.1185" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

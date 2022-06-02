@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginVertical="10dp"
+    android:gravity="center"
+    android:layout_marginHorizontal="2dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_product"
+        android:scaleType="centerCrop"
+        android:padding="4dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#FF0000"
+        app:shapeAppearanceOverlay="@style/rounded_shop"
+        app:strokeColor="@color/lt_gray"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/txt_product"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_product"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Teste de loja" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

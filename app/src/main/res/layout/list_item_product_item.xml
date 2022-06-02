@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginVertical="10dp"
+    android:gravity="center"
+    android:layout_marginHorizontal="2dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_product"
+        android:scaleType="centerCrop"
+        android:padding="4dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#FF0000"
+        app:shapeAppearanceOverlay="@style/rounded_shop"
+        app:strokeColor="@color/lt_gray"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/txt_product"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/img_product"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Teste de loja" />
+
+    <TextView
+        android:id="@+id/txt_size"
+        app:layout_constraintStart_toStartOf="@id/txt_product"
+        app:layout_constraintTop_toBottomOf="@id/txt_product"
+        tools:text="Tamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <!--
+    <TextView
+        android:id="@+id/txt_quant"
+        app:layout_constraintStart_toStartOf="@id/txt_product"
+        app:layout_constraintTop_toBottomOf="@id/txt_price"
+        tools:text="quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    -->
+
+    <TextView
+        android:id="@+id/txt_color"
+        app:layout_constraintStart_toStartOf="@id/txt_product"
+        app:layout_constraintTop_toBottomOf="@id/txt_size"
+        tools:text="Cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <!--
+    <TextView
+        android:id="@+id/txt_star"
+        app:layout_constraintStart_toStartOf="@id/txt_shop"
+        app:layout_constraintTop_toBottomOf="@id/txt_shop"
+        app:drawableStartCompat="@drawable/ic_baseline_star_18"
+        android:textColor="@color/gold"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableTint="@color/gold" />
+
+
+    <TextView
+        android:id="@+id/txt_subtitle"
+        app:layout_constraintStart_toEndOf="@id/txt_star"
+        app:layout_constraintTop_toTopOf="@id/txt_star"
+        tools:text="\u2022 Pizza \u2022 11,2 km"
+        android:layout_marginStart="10dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    -->
+
+    <!--
+    <ImageView
+        android:id="@+id/img_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_baseline_star_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
