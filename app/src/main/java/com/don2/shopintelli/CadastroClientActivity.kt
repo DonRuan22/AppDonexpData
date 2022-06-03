@@ -1,10 +1,9 @@
-package com.don2.shopintelli
+package com.don2.shopintelli.pathActivityCadastroClient
 
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Toast
 import com.android.volley.DefaultRetryPolicy
 import com.android.volley.Request

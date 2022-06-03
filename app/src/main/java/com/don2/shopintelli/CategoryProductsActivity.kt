@@ -1,9 +1,10 @@
-package com.don2.shopintelli
+package com.don2.shopintelli.pathcategoryproduct
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import co.tiagoaguiar.atway.ui.adapter.ATAdapter
+import com.don2.shopintelli.CategoryProductView
 import com.don2.shopintelli.databinding.ActivityCategoryProductsBinding
 
 class CategoryProductsActivity : AppCompatActivity() {

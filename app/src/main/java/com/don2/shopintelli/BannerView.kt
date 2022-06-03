@@ -1,16 +1,17 @@
-package com.don2.shopintelli
+package com.don2.shopintelli.pathbanner
 
 import android.view.ViewGroup
 import co.tiagoaguiar.atway.ui.adapter.ATViewHolder
 import com.don2.shopintelli.databinding.BannerItemBinding
+import com.don2.shopintelli.pathbanner.Banner
 import com.squareup.picasso.Picasso
 
-class BannerView(viewGroup: ViewGroup) : ATViewHolder<com.don2.shopintelli.Banner, BannerItemBinding>(
+class BannerView(viewGroup: ViewGroup) : ATViewHolder<Banner, BannerItemBinding>(
   BannerItemBinding::inflate,
   viewGroup
 ) {
 
-  override fun bind(item: com.don2.shopintelli.Banner) {
+  override fun bind(item: Banner) {
     Picasso.get()
       .load(item.bannerUrl)
       .into(binding.imgBanner)
