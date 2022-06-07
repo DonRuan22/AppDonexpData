@@ -31,7 +31,7 @@ class RestaurantFragment : Fragment(R.layout.fragment_restaurant) {
     private var binding: FragmentRestaurantBinding? = null
 
     private val categoryAdapter = ATAdapter({ CategoryView(it) })
-    private val bannerAdapter = ATAdapter({ com.don2.shopintelli.BannerView(it) })
+    private val bannerAdapter = ATAdapter({ BannerView(it) })
     private val shopAdapter = ATAdapter({ ShopView(it) })
     private val moreShopAdapter = ATAdapter({ MoreShopView(it) })
     private lateinit var client_list: ArrayList<MoreShop>
@@ -82,15 +82,15 @@ class RestaurantFragment : Fragment(R.layout.fragment_restaurant) {
 
 
         bannerAdapter.items = arrayListOf(
-            com.don2.shopintelli.Banner(
+            Banner(
                 1,
                 "https://www.fbvcursos.com/blog/wp-content/uploads/2020/09/ilustracao-do-conceito-de-suporte-ativo_114360-577.jpg"
             ),
-            com.don2.shopintelli.Banner(
+            Banner(
                 2,
                 "https://i0.wp.com/makeitsimple.com.br/wp-content/uploads/2020/08/makeitsimple.com.br-atendimento20automatizado20via20whatsapp.png?resize=535%2C356&ssl=1"
             ),
-            com.don2.shopintelli.Banner(
+            Banner(
                 3,
                 "https://canalpromo.com.br/blog/uploads/images/image_650x433_6015b29a2606d.jpg"
             ),

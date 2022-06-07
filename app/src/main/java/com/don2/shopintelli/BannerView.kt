@@ -1,9 +1,8 @@
-package com.don2.shopintelli.pathbanner
+package com.don2.shopintelli
 
 import android.view.ViewGroup
 import co.tiagoaguiar.atway.ui.adapter.ATViewHolder
 import com.don2.shopintelli.databinding.BannerItemBinding
-import com.don2.shopintelli.pathbanner.Banner
 import com.squareup.picasso.Picasso
 
 class BannerView(viewGroup: ViewGroup) : ATViewHolder<Banner, BannerItemBinding>(

@@ -26,55 +26,22 @@ class RegisterProductActivity : AppCompatActivity() {
             val sharedPreferences: SharedPreferences = this.getSharedPreferences("client_data", MODE_PRIVATE)
             //sharedPreferences.edit().remove("user_id").commit()
             val id_loja = sharedPreferences.getString("id_loja" , "No imported" )
-            val chip_year = binding.chipGroupYear.findViewById<Chip>(binding.chipGroupYear.checkedChipId)?.text
 
-            val chip_ids_size = binding.chipGroupSize.checkedChipIds
-            val list_sizes: MutableList<String> = mutableListOf<String>()
-            for (id in chip_ids_size) {
-                list_sizes.add(binding.chipGroupSize.findViewById<Chip>(id).text.toString())
-            }
-
-            val chip_category = binding.chipGroupCategory.findViewById<Chip>(binding.chipGroupCategory.checkedChipId)?.text
-
-            val chip_material = binding.chipGroupMaterial.findViewById<Chip>(binding.chipGroupMaterial.checkedChipId)?.text
-
-            val chip_gender = binding.chipGroupGender.findViewById<Chip>(binding.chipGroupGender.checkedChipId)?.text
-
-            val chip_ids_color = binding.chipGroupColor.checkedChipIds
-            val list_colors: MutableList<String> = mutableListOf<String>()
-            for (id in chip_ids_color) {
-                list_colors.add(binding.chipGroupColor.findViewById<Chip>(id).text.toString())
-            }
             if(id_loja != "No imported" && !TextUtils.isEmpty(binding.productName.text) &&
                 !TextUtils.isEmpty(binding.price.text.toString())&&
                 !TextUtils.isEmpty(binding.brand.text.toString())&&
-                !TextUtils.isEmpty(chip_year)&&
-                !TextUtils.isEmpty(chip_category)&&
-                !TextUtils.isEmpty(chip_material)&&
-                !TextUtils.isEmpty(chip_gender)&&
-                !TextUtils.isEmpty(id_loja)&&
-                !list_sizes.isEmpty()&&
-                !list_colors.isEmpty()) {
-                for (tam in list_sizes) {
-                    for (color in list_colors) {
-                        val json = JSONObject()
-                        json.put("produto", "no")
-                        json.put("name", binding.productName.text)
-                        json.put("price", binding.price.text.toString().toFloat())
-                        json.put("brand", binding.brand.text.toString().capitalize())
-                        json.put("date_model", chip_year)
-                        json.put("categorie", chip_category)
-                        json.put("material", chip_material)
-                        json.put("gender", chip_gender)
-                        json.put("id_shop", id_loja)
-                        json.put("size", tam)
-                        json.put("color", color)
-                        json.put("type", "CALCADO")
-                        Log.d("JSON-data", json.toString())
-                        sendClient(json)
-                        SystemClock.sleep(1000)
-                    }
-                }
+                !TextUtils.isEmpty(id_loja)) {
+                    val json = JSONObject()
+                    json.put("produto", "no")
+                    json.put("name", binding.productName.text)
+                    json.put("price", binding.price.text.toString().toFloat())
+                    json.put("brand", binding.brand.text.toString().capitalize())
+                    json.put("id_shop", id_loja)
+                    json.put("others", binding.others.text.toString().capitalize())
+
+                    Log.d("JSON-data", json.toString())
+                    sendClient(json)
+                    SystemClock.sleep(1000)
                 super.onBackPressed()
             }
             else{

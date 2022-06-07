@@ -1,4 +1,4 @@
-package com.don2.shopintelli.pathcategoryproduct
+package com.don2.shopintelli
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.don2.shopintelli.pathActivityCadastroClient
+package com.don2.shopintelli
 
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity

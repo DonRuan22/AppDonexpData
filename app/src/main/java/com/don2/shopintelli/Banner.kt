@@ -1,4 +1,4 @@
-package com.don2.shopintelli.pathbanner
+package com.don2.shopintelli
 
 data class Banner(
   val id: Int,

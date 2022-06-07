@@ -37,14 +37,14 @@ class CategoryView(viewGroup: ViewGroup) : ATViewHolder<Category, CategoryItemBi
 
     binding.bgCategory.setOnClickListener{
       if(item.name == "Clientes"){
-        var intent = Intent(binding.bgCategory.context, com.don2.shopintelli.CadastroClientActivity::class.java).apply {
+        var intent = Intent(binding.bgCategory.context, CadastroClientActivity::class.java).apply {
           putExtra("Message", "Load activity client")
         }
         startActivity(binding.bgCategory.context,intent,null)
       }
       else if(item.name == "Produtos"){
-        var intent = Intent(binding.bgCategory.context, CategoryProductsActivity::class.java).apply {
-          putExtra("Message", "Load activity client")
+        var intent = Intent(binding.bgCategory.context, RegisterProductActivity::class.java).apply {
+          putExtra("Message", "Register Product")
         }
         startActivity(binding.bgCategory.context,intent,null)
       }
