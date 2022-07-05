@@ -1,11 +1,14 @@
 package com.don2.shopintelli
 
+import android.R
 import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import co.tiagoaguiar.atway.ui.adapter.ATAdapter
@@ -15,6 +18,8 @@ import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
 import com.don2.shopintelli.databinding.ActivityClientInfoBinding
+import org.json.JSONArray
+import kotlin.math.log
 
 
 class ClientInfoActivity : AppCompatActivity() {
@@ -70,11 +75,64 @@ class ClientInfoActivity : AppCompatActivity() {
                 //    ItemClientInfo(response[0].toString().toInt(),response[1].toString().toInt(),response[2].toString().toInt(),response[3].toString(),response[4].toString())
                 //)
                 binding?.progressBar1?.setVisibility(View.GONE)
-                binding.txtTicketValue.text = response[0].toString()
+                binding.txtTicketValue.text = "R$ "+ response[0].toString()
                 binding.txtNotaValue.text = response[1].toString()
-                binding.txtMediaProductsValue.text = response[2].toString()
-                binding.txtLastOrderValue.text = response[3].toString()
-                num_whatsapp = response[4].toString()
+                binding.txtMediaProductsValue.text = response[2].toString()+ " Itens"
+                binding.txtLastOrderValue.text = "Em: "+ response[3].toString()
+                binding?.txtLastOrderValueTotal.text = "R$ "+ response[4].toString()
+                num_whatsapp = response[6].toString()
+
+                binding?.txtName.text = "Nome: " + response[5].toString()
+                binding?.txtEmail.text = "Email: " + response[6].toString()
+                binding?.txtPhone.text = "Telefone: " + response[7].toString()
+                binding?.txtBirthday.text = "Nascimento: " + response[8].toString()
+
+                var item_list = response.getJSONArray(9)
+                for (i in 0 until item_list.length()) {
+                    var prod =  item_list.getJSONArray(i)
+                    if(i ==0) {
+                        //Log.d("ARRAY TEST",item_list[i].toString())
+                        binding?.lastproduct1?.visibility = View.VISIBLE
+                        binding?.lastproductBrand1?.visibility = View.VISIBLE
+                        binding?.lastproduct1.text = "Produto: "+prod[12].toString()
+                        binding?.lastproductBrand1.text = "Marca: "+prod[14].toString()
+                    }
+                    if(i ==1) {
+                        //Log.d("ARRAY TEST",item_list[i].toString())
+                        //val prod =  item_list.getJSONArray(i)
+                        binding?.lastproduct2?.visibility = View.VISIBLE
+                        binding?.lastproductBrand2?.visibility = View.VISIBLE
+                        binding?.lastproduct2.text = "Produto: "+prod[12].toString()
+                        binding?.lastproductBrand2.text = "Marca: "+prod[14].toString()
+                    }
+                    if(i ==2) {
+                        //Log.d("ARRAY TEST",item_list[i].toString())
+                        //val prod =  item_list.getJSONArray(i)
+                        binding?.lastproduct3?.visibility = View.VISIBLE
+                        binding?.lastproductBrand3?.visibility = View.VISIBLE
+                        binding?.lastproduct3.text = "Produto: "+prod[12].toString()
+                        binding?.lastproductBrand3.text = "Marca: "+prod[14].toString()
+                    }
+                    if(i ==3) {
+                        //Log.d("ARRAY TEST",item_list[i].toString())
+                        //val prod =  item_list.getJSONArray(i)
+                        binding?.lastproduct4?.visibility = View.VISIBLE
+                        binding?.lastproductBrand4?.visibility = View.VISIBLE
+                        binding?.lastproduct4.text = "Produto: "+prod[12].toString()
+                        binding?.lastproductBrand4.text = "Marca: "+prod[14].toString()
+                    }
+                    if(i ==4) {
+                        //Log.d("ARRAY TEST",item_list[i].toString())
+                        //val prod =  item_list.getJSONArray(i)
+                        binding?.lastproduct5?.visibility = View.VISIBLE
+                        binding?.lastproductBrand5?.visibility = View.VISIBLE
+                        binding?.lastproduct5.text = "Produto: "+prod[12].toString()
+                        binding?.lastproductBrand5.text = "Marca: "+prod[14].toString()
+                    }
+                }
+
+
+
                 Log.d("client info", response.toString())
             },
             Response.ErrorListener { error -> Log.d("Error request", error.toString()) })
@@ -87,3 +145,4 @@ class ClientInfoActivity : AppCompatActivity() {
         queue.add(jsonObjectRequest)
     }
 }
+

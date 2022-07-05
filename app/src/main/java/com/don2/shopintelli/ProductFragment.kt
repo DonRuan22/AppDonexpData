@@ -185,6 +185,7 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
                 0,
                 "Produto",
                 item_list[3].toString(),
+                item_list[6].toString(),
                 item_list[2].toString().toDouble(),
             )
             arrayElements.add(elem)

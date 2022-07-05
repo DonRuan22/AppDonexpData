@@ -55,11 +55,11 @@ class CategoryProductsOrdersActivity : AppCompatActivity() {
     private fun sendToGetId() {
         // Instantiate the RequestQueue.
         val sharedPreferences: SharedPreferences = this.getSharedPreferences("client_data", MODE_PRIVATE)
-        val category_order = sharedPreferences.getString("category_order" , "No imported" )
+        val category_order = sharedPreferences.getString("category_order" , "calcado" )
         val id_loja = sharedPreferences.getString("id_loja" , "No imported" )
 
         val queue = Volley.newRequestQueue(this)
-        val url = "https://backend-proj-app-vc5xcezzwa-uc.a.run.app/api/v1/"+ category_order + "/shop/" +id_loja
+        val url = "https://backend-proj-app-vc5xcezzwa-uc.a.run.app/api/v1/"+ category_order + "/product/shop/" +id_loja
         var id: Int;
 
         // Request a string response from the provided URL.
@@ -109,6 +109,7 @@ class CategoryProductsOrdersActivity : AppCompatActivity() {
                 item_list[5].toString(),
                 item_list[3].toString(),
                 //item_list[2].toString().toDouble(),
+                item_list[6].toString(),
                price
             )
             arrayElements.add(elem)

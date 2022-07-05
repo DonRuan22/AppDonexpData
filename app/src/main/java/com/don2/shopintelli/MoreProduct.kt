@@ -6,5 +6,6 @@ data class MoreProduct(
   val quant: Int,
   val category: String,
   val brand: String,
+  val info: String,
   val price: Double
 )

@@ -34,7 +34,7 @@ class MoreClientOrderView(viewGroup: ViewGroup) : ATViewHolder<MoreClientOrder, 
       //val client_name = sharedPreferences.getString("client_id" , "No imported" )
       //Toast.makeText(it.context , client_name , Toast.LENGTH_SHORT).show()
 
-      val intent = Intent(itemView.context, CategoryProductsToListProductsActivity::class.java).apply {
+      val intent = Intent(itemView.context, CategoryProductsOrdersActivity::class.java).apply {
         //putExtra("Client_name", "Ruan")
       }
       ContextCompat.startActivity(itemView.context, intent, null)

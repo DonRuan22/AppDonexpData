@@ -10,8 +10,8 @@ android {
         applicationId "com.don2.shopintelli"
         minSdk 23
         targetSdk 31
-        versionCode 11
-        versionName "1.9"
+        versionCode 12
+        versionName "1.91"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -6,7 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
+        android:id="@+id/layout_linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -30,6 +35,71 @@
             android:layout_centerHorizontal="true" />
 
         <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="email"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Tel"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:text="birthday"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_whatsapp"
+            style="@style/rounded"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/teal_700"
+            android:clickable="true"
+            android:drawableLeft="@drawable/baseline_whatsapp_24"
+            android:textSize="23sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000" />
+
+        <TextView
             android:id="@+id/txt_ticket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,8 +117,8 @@
             android:layout_marginHorizontal="12dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            tools:text="value ticket"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:text="value ticket" />
 
         <TextView
             android:id="@+id/txt_nota"
@@ -68,8 +138,8 @@
             android:layout_marginHorizontal="12dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            tools:text="value nota"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:text="value nota" />
 
         <TextView
             android:id="@+id/txt_media_products"
@@ -89,8 +159,16 @@
             android:layout_marginHorizontal="12dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            tools:text="value media produtos"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:text="value media produtos" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="20dp"
+            android:background="#000000" />
 
         <TextView
             android:id="@+id/txt_last_order"
@@ -99,7 +177,7 @@
             android:layout_marginHorizontal="12dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:text="Última compra em:"
+            android:text="Última compra:"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
@@ -110,22 +188,143 @@
             android:layout_marginHorizontal="12dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            tools:text="value última compra"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:text="value última compra" />
 
-        <Button
-            android:id="@+id/btn_whatsapp"
-            style="@style/rounded"
-            android:layout_width="56dp"
+        <TextView
+            android:id="@+id/txt_last_order_value_total"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:backgroundTint="@color/teal_700"
-            android:clickable="true"
-            android:drawableLeft="@drawable/baseline_whatsapp_24"
-            android:textSize="23sp" />
+            android:textColor="@color/black"
+            tools:text="total última compra" />
 
+
+        <TextView
+            android:id="@+id/txt_last_order_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Últimos itens comprados:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/lastproduct_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        tools:text="lastproduct_1"/>
+
+        <TextView
+            android:id="@+id/lastproduct_brand_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_1"/>
+
+        <TextView
+            android:id="@+id/lastproduct_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_1"/>
+
+        <TextView
+            android:id="@+id/lastproduct_brand_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_2"/>
+
+        <TextView
+            android:id="@+id/lastproduct_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_3"/>
+
+        <TextView
+            android:id="@+id/lastproduct_brand_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_3"/>
+
+        <TextView
+            android:id="@+id/lastproduct_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_4"/>
+
+        <TextView
+            android:id="@+id/lastproduct_brand_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_4"/>
+
+        <TextView
+            android:id="@+id/lastproduct_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_5"/>
+
+        <TextView
+            android:id="@+id/lastproduct_brand_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            tools:text="lastproduct_5"/>
 
 
     </LinearLayout>
+
+    </ScrollView>
 </RelativeLayout>

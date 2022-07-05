@@ -2,9 +2,11 @@ package com.don2.shopintelli
 
 import android.content.Intent
 import android.content.SharedPreferences
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.don2.shopintelli.databinding.ActivitySignInBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -45,7 +47,15 @@ class SignInActivity : AppCompatActivity() {
         binding.signInBtn.setOnClickListener {
             Log.d("SignInActivity", "ENTROU")
             signIn()
+            //getUrlFromIntent(it)
         }
+    }
+
+    fun getUrlFromIntent(view: View) {
+        val url = "https://donexpapp.pt/"
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
     }
 
     private fun signIn() {
